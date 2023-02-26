@@ -59,7 +59,6 @@ h1 {
 .nav ul ul {
   display: none;
   position: absolute;
-  /* background-color: #afaeae; */
   border-top: 0;
   margin-left: -5px;
   margin-top: 10px;
@@ -90,6 +89,14 @@ h1 {
 
 .logo {
   width: 55px;
+}
+
+.sectionsBackground {
+  background: rgba(216, 180, 254, 0.8)url("./images/heroImg.jpg");
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 

@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Nav from './Nav'
 import essenceLogoMain from "../images/essenceLogoMain.png";
+import Group from "../images/group.svg";
 
 function Home() {
 
@@ -10,7 +11,7 @@ function Home() {
       <div className="hero-section flex flex-col md:flex-row items-center w-full py-32">
         <div className="md:w-1/2 text-white md:p-30 p-10">
           <div>
-            <h1 className="font-bold text-6xl headDecor" id='words'>
+            <h1 className="font-bold text-6xl headDecor" id="words">
               ESSENCE TOKEN
             </h1>
           </div>
@@ -23,11 +24,86 @@ function Home() {
           <img src={essenceLogoMain} alt="heroimg" className="" />
         </div>
       </div>
-      <div className='bg-purple-300 p-10 md:p-30'>
-        <h1 className='font-bold headDecor text-5xl'>Features</h1>
-        <div className='flex flex-row md:flex-row w-full'>
-          <div className='w-1/2'>
-            
+      <div className="sectionsBackground p-10 md:p-30">
+        <h1 className="font-bold headDecor text-5xl">Features</h1>
+        <div className="grid grid-cols-2 grid-rows-3 grid-flow-col gap-8 mt-5">
+          <div className="bg-slate-200 rounded-xl p-5">
+            <div className="flex items-center mb-5">
+              <img src={Group} alt="community logo" className="font-bold" />
+              <h3 className="font-bold text-2xl ml-4">Community Support</h3>
+            </div>
+            <p>
+              Essence comprises of a well-built experienced team which is backed
+              by the massive Support of a good community, working together to
+              ensure that the set goals and success level is attained. Great
+              impact to the outside world is certain because we work with great
+              passion for great things.
+            </p>
+          </div>
+          <div className="bg-slate-200 rounded-xl p-5">
+            <div className="flex items-center mb-5">
+              <img src={Group} alt="community logo" className="font-bold" />
+              <h3 className="font-bold text-2xl ml-4">Community Support</h3>
+            </div>
+            <p>
+              Essence comprises of a well-built experienced team which is backed
+              by the massive Support of a good community, working together to
+              ensure that the set goals and success level is attained. Great
+              impact to the outside world is certain because we work with great
+              passion for great things.
+            </p>
+          </div>
+          <div className="bg-slate-200 rounded-xl p-5">
+            <div className="flex items-center mb-5">
+              <img src={Group} alt="community logo" className="font-bold" />
+              <h3 className="font-bold text-2xl ml-4">Community Support</h3>
+            </div>
+            <p>
+              Essence comprises of a well-built experienced team which is backed
+              by the massive Support of a good community, working together to
+              ensure that the set goals and success level is attained. Great
+              impact to the outside world is certain because we work with great
+              passion for great things.
+            </p>
+          </div>
+          <div className="bg-slate-200 rounded-xl p-5">
+            <div className="flex items-center mb-5">
+              <img src={Group} alt="community logo" className="font-bold" />
+              <h3 className="font-bold text-2xl ml-4">Community Support</h3>
+            </div>
+            <p>
+              Essence comprises of a well-built experienced team which is backed
+              by the massive Support of a good community, working together to
+              ensure that the set goals and success level is attained. Great
+              impact to the outside world is certain because we work with great
+              passion for great things.
+            </p>
+          </div>
+          <div className="bg-slate-200 rounded-xl p-5">
+            <div className="flex items-center mb-5">
+              <img src={Group} alt="community logo" className="font-bold" />
+              <h3 className="font-bold text-2xl ml-4">Community Support</h3>
+            </div>
+            <p>
+              Essence comprises of a well-built experienced team which is backed
+              by the massive Support of a good community, working together to
+              ensure that the set goals and success level is attained. Great
+              impact to the outside world is certain because we work with great
+              passion for great things.
+            </p>
+          </div>
+          <div className="bg-slate-200 rounded-xl p-5">
+            <div className="flex items-center mb-5">
+              <img src={Group} alt="community logo" className="font-bold" />
+              <h3 className="font-bold text-2xl ml-4">Community Support</h3>
+            </div>
+            <p>
+              Essence comprises of a well-built experienced team which is backed
+              by the massive Support of a good community, working together to
+              ensure that the set goals and success level is attained. Great
+              impact to the outside world is certain because we work with great
+              passion for great things.
+            </p>
           </div>
         </div>
       </div>
