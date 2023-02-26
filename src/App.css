@@ -67,7 +67,7 @@ h1 {
 
 .nav ul ul li {
   display: block;
-  background-color: #afaeae;
+  background-color: rgba(216, 180, 254);
 }
 
 .nav ul ul li a:visited {
