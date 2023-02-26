@@ -1,20 +1,34 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Nav from './Nav'
-import HeroImg from "../images/heroImg.jpg";
+import essenceLogoMain from "../images/essenceLogoMain.png";
 
 function Home() {
+
   return (
     <main>
       <Nav />
-      <div className="hero-section flex items-center w-full">
-        <div className="w-1/2 text-black">
-          <p>
+      <div className="hero-section flex flex-col md:flex-row items-center w-full py-32">
+        <div className="md:w-1/2 text-white md:p-30 p-10">
+          <div>
+            <h1 className="font-bold text-6xl headDecor" id='words'>
+              ESSENCE TOKEN
+            </h1>
+          </div>
+          <h2 className="text-2xl md:mr-52 mt-8">
             Essence token is a cryptocurrency that aims to provide a means for
             human settlement and exchange within cryptocurrency sector.
-          </p>
+          </h2>
         </div>
-        <div className='w-1/2'>
-          <img src={HeroImg} alt="heroimg" className="" />
+        <div className="md:w-1/2 flex justify-center items-center p-5 md:p-0">
+          <img src={essenceLogoMain} alt="heroimg" className="" />
+        </div>
+      </div>
+      <div className='bg-purple-300 p-10 md:p-30'>
+        <h1 className='font-bold headDecor text-5xl'>Features</h1>
+        <div className='flex flex-row md:flex-row w-full'>
+          <div className='w-1/2'>
+            
+          </div>
         </div>
       </div>
     </main>

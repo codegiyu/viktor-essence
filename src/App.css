@@ -14,6 +14,15 @@ body {
   font-size: 15px;
 }
 
+h1 {
+  font-family: 'Gill Sans';
+}
+
+.headDecor {
+  text-decoration: underline;
+  text-decoration-color: rgb(153, 14, 153);
+  text-decoration-thickness: 10px;
+}
 
 /* Navigation section */
 .nav-wrapper {
@@ -29,7 +38,7 @@ body {
 
 .nav ul li {
   display: inline-block;
-  padding: 20px;
+  padding: 15px;
 }
 
 .nav ul li:hover {
@@ -53,7 +62,7 @@ body {
   /* background-color: #afaeae; */
   border-top: 0;
   margin-left: -5px;
-  margin-top: 20px;
+  margin-top: 10px;
   min-width: 200px;
 }
 
@@ -72,12 +81,16 @@ body {
 }
 
 .hero-section {
-  background-image: url("./images/heroImg.jpg");
+  background: rgba(0, 0, 0, 0.9)url("./images/heroImg.jpg");
+  background-blend-mode: darken;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+.logo {
+  width: 55px;
+}
 
 
 

@@ -1,11 +1,12 @@
 import React from 'react'
+import Logo from "../images/essenceLogoWhite.png";
 
 function Nav() {
   return (
-    <div className='fixed w-full'>
+    <div className="fixed w-full">
       <div className="flex justify-between items-center p-2 px-8 bg-black text-white">
         <div>
-          <h1 className="text-3xl">LOGO</h1>
+          <img src={Logo} alt="logo" className="logo" />
         </div>
         <div className="nav">
           <div className="nav-wrapper">
@@ -22,10 +23,12 @@ function Nav() {
                 SOCIALS
                 <ul>
                   <li>
-                    <a href="#">TWITTER</a>
+                    <a href="https://twitter.com/essence_token?t=CRrf6SLbBZe6nPyp-xVxRA&s=09">
+                      TWITTER
+                    </a>
                   </li>
                   <li>
-                    <a href="#">TELEGRAM</a>
+                    <a href="https://t.me/Essencetoken">TELEGRAM</a>
                   </li>
                 </ul>
               </li>
