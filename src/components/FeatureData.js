@@ -26,7 +26,7 @@ export const Data = [
   },
   {
     id: 4,
-    header: "Development Wallet",
+    header: "Wallet",
     info: "4% of the coin is locked into a \
     multi-signature marketing wallet this allows \
     the team to update the website and run marketing promotions.",

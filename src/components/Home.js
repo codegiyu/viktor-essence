@@ -26,7 +26,7 @@ function Home() {
         </div>
       </div>
       <div className="sectionsBackground p-10 md:p-30">
-        <h1 className="font-bold headDecor text-5xl">Features</h1>
+        <h1 className="text-center md:text-left font-bold headDecor text-5xl">Features</h1>
         <div className='hidden md:block'>
           <FeatureDesk />
         </div>

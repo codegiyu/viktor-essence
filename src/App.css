@@ -25,6 +25,7 @@ h1 {
 }
 
 /* Navigation section */
+
 .nav-wrapper {
   margin-left: auto;
 }
@@ -99,6 +100,16 @@ h1 {
   background-size: cover;
 }
 
+/* MODAL SECTION */
+.modal {
+  position: fixed;
+  background-color: white;
+  width: 80%;
+  top: 20%;
+  left: 10%;
+  border-radius: 10px;
+  padding: 20px 5px 20px 5px;
+}
 
 
 

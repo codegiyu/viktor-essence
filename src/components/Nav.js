@@ -3,7 +3,7 @@ import Logo from "../images/essenceLogoWhite.png";
 
 function Nav() {
   return (
-    <div className="fixed w-full">
+    <div className="hidden md:block fixed w-full">
       <div className="flex justify-between items-center p-2 px-8 bg-black text-white">
         <div>
           <img src={Logo} alt="logo" className="logo" />
