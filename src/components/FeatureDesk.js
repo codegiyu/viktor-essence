@@ -6,7 +6,7 @@ import {Data} from "./FeatureData"
 function FeatureDesk() {
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-6 md:grid-rows-3 grid-flow-col gap-8 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-6 md:grid-rows-3 grid-flow-col gap-8">
         {Data.map((item) => {
           const {id, header, info} = item;
           return (

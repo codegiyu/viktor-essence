@@ -1,22 +1,52 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Nav from './Nav'
 import essenceLogoMain from "../images/essenceLogoMain.png";
 import FeatureDesk from './FeatureDesk';
 import FeaturesMobile from './FeaturesMobile';
+import Metamask from "../images/metamask.png";
+import BNB from "../images/bnb.png";
+import MobileNav from './MobileNav';
 
 function Home() {
+  const [mobileNav, setMobileNav] = useState(false);
+
+  const OpenNav = () => {
+    setMobileNav(true);
+  }
+
+  const CloseNav = () => {
+    setMobileNav(false);
+  };
 
   return (
     <main>
       <Nav />
-      <div className="hero-section flex flex-col md:flex-row items-center w-full py-32">
-        <div className="md:w-1/2 text-white md:p-30 p-10">
+      <MobileNav CloseNav={CloseNav} mobileNav={mobileNav}/>
+      <div className='sticky bg-white w-full flex items-center justify-between md:hidden'>
+        <img src={essenceLogoMain} alt="logo" className="w-9 m-4" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="30"
+          fill="currentColor"
+          className="bi bi-list text-purple-600"
+          viewBox="0 0 16 16"
+          onClick={OpenNav}
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </div>
+      <div className="hero-section flex flex-col md:flex-row items-center w-full md:py-32">
+        <div className="md:w-1/2 text-white md:p-30 p-7 md:p-10 pt-10 md:pt-0">
           <div>
-            <h1 className="font-bold text-6xl headDecor" id="words">
+            <h1 className="font-bold text-4xl md:text-6xl headDecor" id="words">
               ESSENCE TOKEN
             </h1>
           </div>
-          <h2 className="text-2xl md:mr-52 mt-8">
+          <h2 className="text-xl md:mr-52 mt-8">
             Essence token is a cryptocurrency that aims to provide a means for
             human settlement and exchange within cryptocurrency sector.
           </h2>
@@ -26,12 +56,69 @@ function Home() {
         </div>
       </div>
       <div className="sectionsBackground p-10 md:p-30">
-        <h1 className="text-center md:text-left font-bold headDecor text-5xl">Features</h1>
-        <div className='hidden md:block'>
+        <h1 className="text-center md:text-left font-bold headDecor text-5xl mb-6">
+          Features
+        </h1>
+        <div className="hidden md:block">
           <FeatureDesk />
         </div>
-        <div className='md:hidden block'>
-          <FeaturesMobile/>
+        <div className="md:hidden block">
+          <FeaturesMobile />
+        </div>
+      </div>
+      <div className="hero-section p-10 md:p-30">
+        <div>
+          <h1 className="text-center md:text-left text-white font-bold headDecor text-5xl">
+            How To Buy
+          </h1>
+          <div className="grid grid-col-1 grid-row-3 md:grid-cols-3 md:grid-rows-1 gap-3 mt-8">
+            <div className="text-center">
+              <div className="flex flex-col mb-2">
+                <img
+                  src={Metamask}
+                  alt="metamask"
+                  className="w-1/4 mx-auto my-3"
+                />
+                <h2 className="text-white font-bold text-xl md:text-2xl">
+                  Create Metamask Wallet
+                </h2>
+              </div>
+              <p className="text-white text-xs md:text-xl">
+                Create a MetaMask Wallet using either a desktop computer or an
+                iOS/Android. This will allow you to buy, sell, send, and receive
+                $AIWKC
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="flex flex-col mb-2">
+                <img src={BNB} alt="metamask" className="w-2/12 mx-auto my-3" />
+                <h2 className="text-white font-bold text-xl md:text-2xl">
+                  Send BNB to your Wallet
+                </h2>
+              </div>
+              <p className="text-white text-xs md:text-xl">
+                You can buy BNB directly on MetaMask or transfer it to your
+                MetaMask Wallet from exchanges like Binance, Kucoin, etc.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="flex flex-col mb-2">
+                <img
+                  src={essenceLogoMain}
+                  alt="logo"
+                  className="w-2/12 mx-auto my-3"
+                />
+                <h2 className="text-white font-bold text-xl md:text-2xl">
+                  Swap BNB For $ESCN
+                </h2>
+              </div>
+              <p className="text-white text-xs md:text-xl">
+                When you have BNB available, Press ‘Select a token’ and enter
+                the token address "OUR contract address would be here" Click the
+                swap button & confirm the transaction
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </main>

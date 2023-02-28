@@ -115,11 +115,45 @@ h1 {
 
 
 
+@media only screen and (max-width:768px) {
+  /* mobile-navigation */
+  .mobileNav {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(0.3rem);
+    transition: transform 600ms ease-out;
+    transform: translateX(-0%);
+    z-index: 9999;
+    padding: 10px;
+  }
+
+  .openNav {
+    transform: translateX(100%);
+  }
+
+  @supports (inset: 0 0 0 0) {
+    .mobileNav {
+      inset: 0 0 0 0;
+    }
+  }
+
+  .nav ul li {
+    display: block;
+    padding: 15px;
+  }
+
+  .nav ul ul  {
+    position: relative;
+  }
+}
 
 
 
-
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
@@ -132,4 +166,4 @@ h1 {
   to {
     transform: rotate(360deg);
   }
-}
+} */

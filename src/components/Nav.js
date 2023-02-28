@@ -33,7 +33,7 @@ function Nav() {
                 </ul>
               </li>
               <li>
-                <button className="p-2 bg-blue-500 rounded-lg">BUY NOW</button>
+                <button className="p-2 bg-purple-600 rounded-lg">BUY NOW</button>
               </li>
             </ul>
           </div>
