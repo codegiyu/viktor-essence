@@ -6,8 +6,55 @@ import FeaturesMobile from './FeaturesMobile';
 import Metamask from "../images/metamask.png";
 import BNB from "../images/bnb.png";
 import MobileNav from './MobileNav';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Pie } from "react-chartjs-2";
+
+ChartJS.register(ArcElement, Tooltip, Legend);
+
 
 function Home() {
+  const data = {
+    labels: [
+      "Community Management - 7%",
+      "liquidity Pool - 30%",
+      "Development - 7%",
+      "Marketing - 6%",
+      "Ecosystem - 6%",
+      "Airdrop - 2%",
+      "Team - 7%",
+      "NFT - 35%",
+    ],
+    datasets: [
+      {
+        data: [6, 6, 2, 7, 7, 7, 30, 35],
+        backgroundColor: [
+          "aqua",
+          "orangered",
+          "purple",
+          "blue",
+          "green",
+          "yellow",
+          "pink",
+          "red",
+        ],
+      },
+      {
+        data: [6, 6, 2, 7, 7, 7, 30, 35],
+        backgroundColor: [
+          "aqua",
+          "orangered",
+          "purple",
+          "blue",
+          "green",
+          "yellow",
+          "pink",
+          "red",
+        ],
+      },
+    ],
+  };
+
+
   const [mobileNav, setMobileNav] = useState(false);
 
   const OpenNav = () => {
@@ -21,8 +68,8 @@ function Home() {
   return (
     <main>
       <Nav />
-      <MobileNav CloseNav={CloseNav} mobileNav={mobileNav}/>
-      <div className='sticky bg-white w-full flex items-center justify-between md:hidden'>
+      <MobileNav CloseNav={CloseNav} mobileNav={mobileNav} />
+      <div className="sticky bg-white w-full flex items-center justify-between md:hidden">
         <img src={essenceLogoMain} alt="logo" className="w-9 m-4" />
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +118,7 @@ function Home() {
           <h1 className="text-center md:text-left text-white font-bold headDecor text-5xl">
             How To Buy
           </h1>
-          <div className="grid grid-col-1 grid-row-3 md:grid-cols-3 md:grid-rows-1 gap-3 mt-8">
+          <div className="grid grid-col-1 grid-row-3 md:grid-cols-3 md:grid-rows-1 gap-3 md:gap-5 mt-8">
             <div className="text-center">
               <div className="flex flex-col mb-2">
                 <img
@@ -106,7 +153,7 @@ function Home() {
                 <img
                   src={essenceLogoMain}
                   alt="logo"
-                  className="w-2/12 mx-auto my-3"
+                  className="w-2/12 md:w-20 mx-auto my-3"
                 />
                 <h2 className="text-white font-bold text-xl md:text-2xl">
                   Swap BNB For $ESCN
@@ -117,6 +164,96 @@ function Home() {
                 the token address "OUR contract address would be here" Click the
                 swap button & confirm the transaction
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-purple-300 md:p-10 md:p-30">
+        <h1 className="text-center md:text-left font-bold headDecor text-5xl mb-4">
+          Tokonomics
+        </h1>
+        <div className="flex flex-col md:justify-center md:flex-row w-full">
+          <div className="flex flex-col items-center my-7 md:w-1/3 md:mr-28">
+            <Pie data={data}></Pie>
+          </div>
+          <div>
+            <div className="flex items-center mb-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-caret-right-fill text-purple-600 mr-3"
+                viewBox="0 0 16 16"
+              >
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+              </svg>
+              <p className="font-bold">Launch on Pancakeswap</p>
+            </div>
+            <div className="flex items-center mb-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-caret-right-fill text-purple-600 mr-3"
+                viewBox="0 0 16 16"
+              >
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+              </svg>
+              <p className="font-bold">Total Supply 1Trillion Tokens</p>
+            </div>
+            <div className="flex items-center mb-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-caret-right-fill text-purple-600 mr-3"
+                viewBox="0 0 16 16"
+              >
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+              </svg>
+              <p className="font-bold">Liquidity Pool: 30%</p>
+            </div>
+            <div className="flex items-center mb-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-caret-right-fill text-purple-600 mr-3"
+                viewBox="0 0 16 16"
+              >
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+              </svg>
+              <p className="font-bold">24 month vesting period</p>
+            </div>
+            <div className="flex items-center mb-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-caret-right-fill text-purple-600 mr-3"
+                viewBox="0 0 16 16"
+              >
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+              </svg>
+              <p className="font-bold">Team and advisor wallets are locked.</p>
+            </div>
+            <div className="flex items-center mb-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-caret-right-fill text-purple-600 mr-3"
+                viewBox="0 0 16 16"
+              >
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+              </svg>
+              <p className="font-bold">Binance Smart Chain</p>
             </div>
           </div>
         </div>
