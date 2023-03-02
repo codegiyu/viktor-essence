@@ -173,10 +173,10 @@ function Home() {
           Tokonomics
         </h1>
         <div className="flex flex-col md:justify-center md:flex-row w-full">
-          <div className="flex flex-col items-center my-7 md:w-1/3 md:mr-28">
+          <div className="flex flex-col items-center md:w-1/3 md:mr-28">
             <Pie data={data}></Pie>
           </div>
-          <div>
+          <div className="mt-10 md:mt-0">
             <div className="flex items-center mb-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -254,6 +254,64 @@ function Home() {
                 <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
               </svg>
               <p className="font-bold">Binance Smart Chain</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="hero-section p-10 md:p-30">
+        <h1 className="text-center md:text-left text-white font-bold headDecor text-5xl mb-10">
+          Road Map
+        </h1>
+        <div id="resume" className="flex flex-col md:flex-row w-full resume">
+          <div className="w-1/2" data-aos="fade-up" data-aos-delay="100">
+            <h3 className="resume-title">PHASE ONE</h3>
+            <div className="resume-item">
+              <h4>Essence Token Launch</h4>
+            </div>
+            <div className="resume-item">
+              <h4>Organic Telegram and Twitter community</h4>
+            </div>
+            <div className="resume-item">
+              <h4>Website Launch</h4>
+            </div>
+            <div className="resume-item">
+              <h4>Whitepaper Launch</h4>
+            </div>
+            <div className="resume-item">
+              <h4>Token Contract Audit</h4>
+            </div>
+            <div className="resume-item">
+              <h4>Global Community Expansion</h4>
+            </div>
+          </div>
+          <div className="w-1/2" data-aos="fade-up" data-aos-delay="100">
+            <h3 className="resume-title">PHASE TWO</h3>
+            <div className="resume-item">
+              <h4>Coinmarket and CoinGecko listing</h4>
+            </div>
+            <div className="resume-item">
+              <h4>Creation of DAO Wallet</h4>
+            </div>
+            <div className="resume-item">
+              <h4>App development for IOS/Andriod</h4>
+            </div>
+            <div className="resume-item">
+              <h4>Listing on Centralized Exchanges</h4>
+            </div>
+          </div>
+          <div className="w-1/2" data-aos="fade-up" data-aos-delay="100">
+            <h3 className="resume-title">PHASE TWO</h3>
+            <div className="resume-item">
+              <h4>Coinmarket and CoinGecko listing</h4>
+            </div>
+            <div className="resume-item">
+              <h4>Creation of DAO Wallet</h4>
+            </div>
+            <div className="resume-item">
+              <h4>App development for IOS/Andriod</h4>
+            </div>
+            <div className="resume-item">
+              <h4>Listing on Centralized Exchanges</h4>
             </div>
           </div>
         </div>
