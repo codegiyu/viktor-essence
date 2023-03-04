@@ -186,6 +186,12 @@ h1 {
   .nav ul ul  {
     position: relative;
   }
+
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 10px;
+    font-weight: 600;
+  }
 }
 
 

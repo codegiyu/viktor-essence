@@ -262,8 +262,11 @@ function Home() {
         <h1 className="text-center md:text-left text-white font-bold headDecor text-5xl mb-10">
           Road Map
         </h1>
-        <div id="resume" className="flex flex-col md:flex-row w-full resume">
-          <div className="w-1/2" data-aos="fade-up" data-aos-delay="100">
+        <div
+          id="resume"
+          className="grid grid-rows-4 md:grid-rows-2 grid-cols-1 md:grid-cols-2 grid-flow-col gap-3 w-full resume"
+        >
+          <div data-aos="fade-up" data-aos-delay="100">
             <h3 className="resume-title">PHASE ONE</h3>
             <div className="resume-item">
               <h4>Essence Token Launch</h4>
@@ -284,7 +287,7 @@ function Home() {
               <h4>Global Community Expansion</h4>
             </div>
           </div>
-          <div className="w-1/2" data-aos="fade-up" data-aos-delay="100">
+          <div data-aos="fade-up" data-aos-delay="100">
             <h3 className="resume-title">PHASE TWO</h3>
             <div className="resume-item">
               <h4>Coinmarket and CoinGecko listing</h4>
@@ -293,25 +296,40 @@ function Home() {
               <h4>Creation of DAO Wallet</h4>
             </div>
             <div className="resume-item">
-              <h4>App development for IOS/Andriod</h4>
+              <h4>Partnership Announcements</h4>
             </div>
             <div className="resume-item">
-              <h4>Listing on Centralized Exchanges</h4>
+              <h4>Airdrops and Contests for the community and Token Holders</h4>
             </div>
           </div>
-          <div className="w-1/2" data-aos="fade-up" data-aos-delay="100">
-            <h3 className="resume-title">PHASE TWO</h3>
+          <div data-aos="fade-up" data-aos-delay="100">
+            <h3 className="resume-title">PHASE THREE</h3>
             <div className="resume-item">
-              <h4>Coinmarket and CoinGecko listing</h4>
+              <h4>Project and White Paper Review</h4>
             </div>
             <div className="resume-item">
-              <h4>Creation of DAO Wallet</h4>
+              <h4>Market Analysis</h4>
             </div>
+            <div className="resume-item">
+              <h4>25,000 Telegram Followers</h4>
+            </div>
+            <div className="resume-item">
+              <h4>Listing on Centralised Exchanges</h4>
+            </div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="100">
+            <h3 className="resume-title">PHASE FOUR</h3>
             <div className="resume-item">
               <h4>App development for IOS/Andriod</h4>
             </div>
             <div className="resume-item">
-              <h4>Listing on Centralized Exchanges</h4>
+              <h4>Future Planning</h4>
+            </div>
+            <div className="resume-item">
+              <h4>Listing on more CEX</h4>
+            </div>
+            <div className="resume-item">
+              <h4>NFT Creation for innovation and marketing</h4>
             </div>
           </div>
         </div>
