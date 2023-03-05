@@ -23,36 +23,41 @@ function MobileNav({CloseNav, mobileNav}) {
           </svg>
         </div>
         <div>
-            <div className="nav">
-                <div className="nav-wrapper">
-                    <ul>
-                    <li className="mx-3">
-                        TRADE DEX
-                        <ul>
-                        <li>
-                            <a href="#">PANCAKESWAP</a>
-                        </li>
-                        </ul>
+          <div className="nav">
+            <div className="nav-wrapper">
+              <ul>
+                <li className="md:mx-3">
+                  TRADE DEX
+                  <ul>
+                    <li>
+                      <a href="#">PANCAKESWAP</a>
                     </li>
-                    <li className="mx-3">
-                        SOCIALS
-                        <ul>
-                        <li>
-                            <a href="https://twitter.com/essence_token?t=CRrf6SLbBZe6nPyp-xVxRA&s=09">
-                            TWITTER
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://t.me/Essencetoken">TELEGRAM</a>
-                        </li>
-                        </ul>
+                  </ul>
+                </li>
+                <li className="md:mx-3">
+                  SOCIALS
+                  <ul>
+                    <li>
+                      <a href="https://twitter.com/essence_token?t=CRrf6SLbBZe6nPyp-xVxRA&s=09">
+                        TWITTER
+                      </a>
                     </li>
                     <li>
-                        <button className="p-2 bg-purple-500 rounded-lg">BUY NOW</button>
+                      <a href="https://t.me/Essencetoken">TELEGRAM</a>
                     </li>
-                    </ul>
-                </div>
+                  </ul>
+                </li>
+                <li className="md:mx-3">
+                  <a href="">WHITEPAPER</a>
+                </li>
+                <li>
+                  <button className="p-2 bg-purple-500 rounded-lg">
+                    BUY NOW
+                  </button>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
       </div>
     </div>

@@ -42,7 +42,7 @@ function FeaturesMobile() {
           );
         })}
       </div>
-      <div className={modal ? "modal relative" : "hidden"}>
+      <div className={modal ? "modal shadow-lg relative" : "hidden"}>
         <img src={essenceLogoMain} alt="logo" className='w-8 mx-auto' />
         <div>
           <svg
