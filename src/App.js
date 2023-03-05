@@ -348,7 +348,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="hero-section p-10 md:p-30">
+        <div className="bg-black p-10 md:p-30">
           <Footer/>
         </div>
       </main>
