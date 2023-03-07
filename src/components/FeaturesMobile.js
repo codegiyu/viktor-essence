@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Data } from './FeatureData';
-import Group from "../images/group.svg";
 import essenceLogoMain from "../images/essenceLogoMain.png";
 
 function FeaturesMobile() {
@@ -22,11 +21,11 @@ function FeaturesMobile() {
     <div>
       <div className="flex flex-col">
         {Data.map((item) => {
-          const { id, header, info } = item;
+          const { id, header, info, icon } = item;
           return (
             <div key={id} className="bg-slate-200 rounded-xl p-5 m-4">
               <div className="flex items-center mb-5">
-                <img src={Group} alt="community logo" className="font-bold w-9" />
+                <img src={icon} alt="community logo" className="font-bold w-9" />
                 <h3 className="font-bold text-2xl ml-4">{header}</h3>
               </div>
               <div>
