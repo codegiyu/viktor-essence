@@ -68,11 +68,12 @@ h1 {
 
 .nav ul ul li {
   display: block;
-  background-color: rgba(216, 180, 254);
+  background-color: rgb(233, 223, 243);
+  color: black;
 }
 
 .nav ul ul li a:visited {
-  color: white;
+  color: rgb(10, 10, 10);
 }
 
 .nav ul ul li a:hover {
@@ -90,6 +91,10 @@ h1 {
 
 .logo {
   width: 55px;
+}
+
+.how-to-buy-essence-logo {
+  width: 14%;
 }
 
 .sectionsBackground {

@@ -158,7 +158,7 @@ function App() {
                   <img
                     src={essenceLogoMain}
                     alt="logo"
-                    className="w-2/12 md:w-20 mx-auto my-3"
+                    className="how-to-buy-essence-logo mx-auto my-3"
                   />
                   <h2 className="text-white font-bold text-xl md:text-2xl">
                     Swap BNB For $ESCN
@@ -275,22 +275,22 @@ function App() {
             <div data-aos="fade-up" data-aos-delay="100">
               <h3 className="resume-title">PHASE ONE</h3>
               <div className="resume-item">
-                <h4>Essence Token Launch</h4>
-              </div>
-              <div className="resume-item">
                 <h4>Organic Telegram and Twitter community</h4>
               </div>
               <div className="resume-item">
                 <h4>Website Launch</h4>
               </div>
               <div className="resume-item">
+                <h4>Essence Token Launch</h4>
+              </div>
+              <div className="resume-item">
                 <h4>Whitepaper Launch</h4>
               </div>
               <div className="resume-item">
-                <h4>Token Contract Audit</h4>
+                <h4>Global Community Expansion</h4>
               </div>
               <div className="resume-item">
-                <h4>Global Community Expansion</h4>
+                <h4>Token Contract Audit</h4>
               </div>
             </div>
             <div data-aos="fade-up" data-aos-delay="100">
