@@ -68,7 +68,12 @@ function App() {
         <Nav />
         <MobileNav CloseNav={CloseNav} mobileNav={mobileNav} />
         <div className="sticky bg-white w-full flex items-center justify-between md:hidden">
-          <img src={essenceLogoMain} alt="logo" className="w-9 m-4" />
+          <img
+            src={essenceLogoMain}
+            alt="logo"
+            className="w-9 m-4"
+            loading="eager"
+          />
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -100,11 +105,16 @@ function App() {
             </h2>
           </div>
           <div className="md:w-1/2 flex justify-center items-center p-5 md:p-0">
-            <img src={essenceLogoMain} alt="heroimg" className="" />
+            <img
+              src={essenceLogoMain}
+              alt="heroimg"
+              className=""
+              loading="eager"
+            />
           </div>
         </div>
-        <div className="sectionsBackground p-10 md:p-30">
-          <h1 className="text-center md:text-left font-bold headDecor text-5xl mb-6">
+        <div className="sectionsBackground p-10 md:p-30 md:pb-32">
+          <h1 className="text-center text-white md:text-left font-bold headDecor text-5xl mb-6">
             Features
           </h1>
           <div className="hidden md:block">
@@ -114,7 +124,7 @@ function App() {
             <FeaturesMobile />
           </div>
         </div>
-        <div className="hero-section p-10 md:p-30">
+        <div className="hero-section p-10 md:p-30 md:pb-32">
           <div>
             <h1 className="text-center md:text-left text-white font-bold headDecor text-5xl">
               How To Buy
@@ -134,7 +144,7 @@ function App() {
                 <p className="text-white text-xs md:text-xl">
                   Create a MetaMask Wallet using either a desktop computer or an
                   iOS/Android. This will allow you to buy, sell, send, and
-                  receive $AIWKC
+                  receive $ESCN
                 </p>
               </div>
               <div className="text-center">
@@ -173,15 +183,15 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="bg-purple-300 md:p-10 md:p-30">
-          <h1 className="text-center md:text-left font-bold headDecor text-5xl mb-4">
+        <div className="sectionsBackground md:p-10 md:p-30 md:pb-32">
+          <h1 className="text-center text-white md:text-left font-bold headDecor text-5xl mb-10">
             Tokonomics
           </h1>
           <div className="flex flex-col md:justify-center md:flex-row w-full">
             <div className="flex flex-col items-center md:w-1/3 md:mr-28">
               <Pie data={data}></Pie>
             </div>
-            <div className="mt-10 md:mt-0">
+            <div className="mt-10 md:mt-0 text-white">
               <div className="flex items-center mb-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -219,7 +229,7 @@ function App() {
                 >
                   <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
                 </svg>
-                <p className="font-bold">Liquidity Pool: 30%</p>
+                <p className="font-bold">Liquidity Pool: 10%</p>
               </div>
               <div className="flex items-center mb-3">
                 <svg
@@ -265,13 +275,11 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="hero-section p-10 md:p-30">
+        <div className="hero-section p-10 md:p-30 md:pb-32">
           <h1 className="text-center md:text-left text-white font-bold headDecor text-5xl mb-10">
             Road Map
           </h1>
-          <div
-            className="grid grid-rows-4 md:grid-rows-2 grid-cols-1 md:grid-cols-2 grid-flow-col w-full resume"
-          >
+          <div className="grid grid-rows-4 md:grid-rows-2 grid-cols-1 md:grid-cols-2 grid-flow-col w-full resume">
             <div data-aos="fade-up" data-aos-delay="100">
               <h3 className="resume-title">PHASE ONE</h3>
               <div className="resume-item">
@@ -349,7 +357,7 @@ function App() {
           </div>
         </div>
         <div className="bg-black p-10 md:p-30">
-          <Footer/>
+          <Footer />
         </div>
       </main>
     );

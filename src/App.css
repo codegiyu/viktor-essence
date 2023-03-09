@@ -82,7 +82,7 @@ h1 {
 }
 
 .hero-section {
-  background: rgba(0, 0, 0, 0.9)url("./images/heroImg.jpg");
+  background: rgba(20, 1, 39, 0.9)url("./images/heroImg.jpg");
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-position: center;
@@ -98,8 +98,7 @@ h1 {
 }
 
 .sectionsBackground {
-  background: rgba(216, 180, 254, 0.8)url("./images/heroImg.jpg");
-  background-blend-mode: lighten;
+  background: rgba(20, 1, 39, 1);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

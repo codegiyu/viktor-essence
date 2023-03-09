@@ -11,7 +11,7 @@ function FeatureDesk() {
           return (
             <div key={id} className="bg-slate-200 rounded-xl p-5">
               <div className="flex items-center mb-5">
-                <img src={icon} alt="community logo" className="w-12 font-bold" />
+                <img src={icon} alt="community logo" className="w-12 font-bold" loading='eager' />
                 <h3 className="font-bold text-2xl ml-4">{header}</h3>
               </div>
               <p>{info}</p>

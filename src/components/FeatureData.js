@@ -13,10 +13,10 @@ export const Data = [
     id: 2,
     icon: "https://icon-library.com/images/future-icon-png/future-icon-png-4.jpg",
     header: "Future Driven",
-    info: "The first potential use of AI to \
+    info: "The first potential use of Web3 to \
     scale and invites solutions, innovation, \
-    and ML (Machine Learning) to the Meme coin \
-    space. Ai WikiCat is the Future.",
+    and ML (Machine Learning) to the digital \
+    space. Essence is the Future.",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ export const Data = [
     id: 4,
     icon: "https://www.hmgs.org/resource/resmgr/fall-in/2019/wallet-icon.png",
     header: "Wallet",
-    info: "4% of the coin is locked into a \
+    info: "3% of the coin is locked into a \
     multi-signature marketing wallet this allows \
     the team to update the website and run marketing promotions.",
   },
@@ -39,14 +39,14 @@ export const Data = [
     id: 5,
     icon: "https://digital.lifeshare.org.uk/wp-content/uploads/2020/06/gear-1077550_1280-1024x1024.png",
     header: "Low Slippage",
-    info: "AI WikiCat as a meme coin furthers the \
+    info: "Essence as a coin for great achievements, furthers the \
     adoption of low slippage of easy transactions being a community-driven project.",
   },
   {
     id: 6,
     icon: "https://www.theforesight.co.uk/assets/images/icons/rocket_launch.png",
     header: "Fair Launch",
-    info: "To ensure inclusivity, we launched AI WikiCat coin ($AIWKC) \
+    info: "To ensure inclusivity, we launched Essence Coin ($ESCN) \
     available to everyone on PancakeSwap V2.",
   },
 ];
