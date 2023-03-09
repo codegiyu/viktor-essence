@@ -23,7 +23,7 @@ function FeaturesMobile() {
         {Data.map((item) => {
           const { id, header, info, icon } = item;
           return (
-            <div key={id} className="bg-slate-200 rounded-xl p-5 m-4">
+            <div key={id} className="bg-slate-400 rounded-xl p-5 m-4">
               <div className="flex items-center mb-5">
                 <img src={icon} alt="community logo" className="font-bold w-9" loading='eager'/>
                 <h3 className="font-bold text-2xl ml-4">{header}</h3>
