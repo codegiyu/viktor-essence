@@ -31,8 +31,8 @@ export const Data = [
     id: 4,
     icon: "https://www.hmgs.org/resource/resmgr/fall-in/2019/wallet-icon.png",
     header: "Wallet",
-    info: "3% of the coin is locked into a \
-    multi-signature marketing wallet this allows \
+    info: "3% of the coin is sent into a \
+    multi-signature marketing wallet, this allows \
     the team to update the website and run marketing promotions.",
   },
   {
