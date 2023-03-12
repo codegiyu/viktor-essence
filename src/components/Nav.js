@@ -15,7 +15,7 @@ function Nav() {
                 TRADE DEX
                 <ul>
                   <li>
-                    <a href="#">PANCAKESWAP</a>
+                    Coming Soon..
                   </li>
                 </ul>
               </li>
