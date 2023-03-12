@@ -1,4 +1,3 @@
-import './App.css';
 import React, {useState} from 'react'
 import Nav from './components/Nav'
 import essenceLogoMain from "./images/essenceLogoMain.png";
@@ -7,9 +6,10 @@ import FeaturesMobile from './components/FeaturesMobile';
 import Metamask from "./images/metamask.png";
 import BNB from "./images/bnb.png";
 import MobileNav from './components/MobileNav';
+import Footer from './components/Footer';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
-import Footer from './components/Footer';
+import './App.css';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -64,7 +64,7 @@ function App() {
   };
 
     return (
-      <main>
+      <>
         <Nav />
         <MobileNav CloseNav={CloseNav} mobileNav={mobileNav} />
         <div className="sticky bg-white w-full flex items-center justify-between md:hidden">
@@ -359,7 +359,7 @@ function App() {
         <div className="bg-black p-10 md:p-30">
           <Footer />
         </div>
-      </main>
+      </>
     );
 }
 
